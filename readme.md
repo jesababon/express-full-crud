@@ -5,7 +5,7 @@ Let's make a full CRUD app!
 
 ## Learning Objectives
 * Express (MVC pattern)
-* EJS Templating
+* Mustache Templating
 * CRUD Functionality
 * PG-Promise (Postgresql Integration)
 
@@ -30,7 +30,7 @@ Directions are going to be a little more sparse as you should be able to start r
 * Set up the folder structure for your app - For example: `views`, `controllers`, `models`, `public`, `migrations`, `config`, etc
 * `npm install --save` any modules you might need
     - express
-    - ejs
+    - mustache
     - path
     - body-parser
     - pg-promise
@@ -61,9 +61,9 @@ Hopefully at this point the setup process for Node/Express apps is becoming more
     - `index.js`
     - `controller.js`
 * **Views**
-    - `index.ejs`
-    - `show.ejs`
-    - `new.ejs`
+    - `index.html`
+    - `show.html`
+    - `new.html`
 
 Before moving on, make sure that your To Do app starts without any errors and can display a simple index page.
 
@@ -86,7 +86,7 @@ Let's put the finishing touches on this To Do app and confirm everything works.
 * Make sure there is something in your `tasks` table so that we can test our To Do app
 * Update your **controller** to `require` the `Task` model and pass data to the view
 * Update your **views** to incorporate the data being fed from the **controller**
-* Spin up your server, navigate to `localhost:3000/tasks` and confirm that your `index.ejs` is being rendered with data from your `tasks` table
+* Spin up your server, navigate to `localhost:3000/tasks` and confirm that your `index.html` is being rendered with data from your `tasks` table
 
 If you made it this far, congrats! You finished the required portion of the homework. If you have the time or energy, it would be a really good idea to tackle the bonus for this homework.
 
