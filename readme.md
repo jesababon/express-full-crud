@@ -5,7 +5,7 @@ Let's make a full CRUD app!
 
 ## Learning Objectives
 * Express (MVC pattern)
-* Mustache Templating
+* EJS Templating
 * CRUD Functionality
 * PG-Promise (Postgresql Integration)
 
@@ -13,8 +13,8 @@ Let's make a full CRUD app!
 No starter files!
 
 ## Completion
-Parts 1 - 5 are required for completion
-parts 6 - 8 are BONUS!
+Parts 1 - 8 are required for completion
+
 
 ## Submission
 Homework is due tonight at 11pm
@@ -30,8 +30,7 @@ Directions are going to be a little more sparse as you should be able to start r
 * Set up the folder structure for your app - For example: `views`, `controllers`, `models`, `public`, `migrations`, `config`, etc
 * `npm install --save` any modules you might need
     - express
-    - mustache
-    - path
+    - ejs
     - body-parser
     - pg-promise
 * Add a `.gitignore` file and add the following files and folders to it:
@@ -58,12 +57,19 @@ Hopefully at this point the setup process for Node/Express apps is becoming more
 * `index.js`
 * `resources.js`
 * **Controllers**
-    - `index.js`
-    - `controller.js`
+    - `todo-controller.js`
+* **Models**
+    -`todo.js`
+* **db**
+    - **migrations**
+        - `migration01022018.sql`
+    - **seeds**
+        - `seed.sql`
+    - `config.js`
 * **Views**
-    - `index.html`
-    - `show.html`
-    - `new.html`
+    - `index.ejs`
+    - `show.ejs`
+    - `new.ejs`
 
 Before moving on, make sure that your To Do app starts without any errors and can display a simple index page.
 
@@ -90,15 +96,17 @@ Let's put the finishing touches on this To Do app and confirm everything works.
 
 If you made it this far, congrats! You finished the required portion of the homework. If you have the time or energy, it would be a really good idea to tackle the bonus for this homework.
 
-#### Part 6 - BONUS - Edit Functionality
+#### Part 6 - Edit Functionality
 
 Implement UPDATE functionality. You'll need to add an Edit **view** and update the **controller** and **model**.
 
-#### Part 7 - BONUS - Delete Functionality
+#### Part 7 - Delete Functionality
 
 Implement DELETE functionality. Think about what files need to be updated to make this work.
 
-#### Part 8 - BONUS - Style this bad boy so it looks nice!
+#### Part 8 - Style this bad boy so it looks nice!
+
+#### Part 9 BONUS - Install `bcryptjs`, `cookie-parser`, `express-sessions`, `passport`, and `passport-local` and get auth-y in here!
 
 
 
