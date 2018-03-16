@@ -14,7 +14,7 @@ Let's make a full CRUD app!
 No starter files!
 
 ## Completion
-Parts 1 - 8 are required for completion, and 9 and 10 are bonus.
+Parts 1 - 8 are required for completion.
 
 
 ## Submission
@@ -119,24 +119,27 @@ If you made it this far, congrats! You're almost done! Next is the remaining thr
 
 #### Part 6 - Create Functionality
 
-Implement CREATE functionality. You'll need to add an New **view** and update `server.js` and **model**.
+Implement CREATE functionality. You'll need to add an New **view** and update `server.js` with the route `/new` and **model**.
 *Maybe reference the [post requests lecture](https://git.generalassemb.ly/wdi-nyc-ewok/LESSON_U02_D10_POST_REQUESTS)* 🚀
 
 #### Part 7 - Delete Functionality
 
-Implement DELETE functionality. Think about what files need to be updated to make this work.
+Implement DELETE functionality. Think about what files need to be updated to make this work. *No Need to create a new view, use postgress to test it*
 
 #### Part 8 - Edit Functionality
 
-Implement UPDATE functionality. Update `server.js` and **model**.
+Implement UPDATE functionality. Update `server.js` and **model**. *No Need to create a new view, use postgress to test it*
 
-#### Part 9 BONUS - Edit View
 
-Create the Edit **view** so it prepopulates the to do in the fields (use the `value` html attribute).
+#### BONUS - MORE GOODIES
 
-#### Part 10 BONUS - Style this bad boy so it looks nice!
+- Add an edit button that will take the user to an Edit  **view** so it prepopulates the to do (task) in the input fields (use the `value` html attribute). *you will need a new route where the for will be displayed, maybe `/:id/edit`?* 🧐
 
-#### Part 11 BONUS - Install `bcryptjs`, `cookie-parser`, `express-sessions`, `passport`, and `passport-local` and get auth-y in here! Spoiler alert: you'll need to add a couple more views to pull off this bonus
+- Add a delete button to you task and redirect the user to their tasks
+
+- Style this bad boy so it looks nice!
+
+#### SUPER BONUS - Install `bcryptjs`, `cookie-parser`, `express-sessions`, `passport`, and `passport-local` and get auth-y in here! Spoiler alert: you'll need to add a couple more views to pull off this bonus
 
 
 
