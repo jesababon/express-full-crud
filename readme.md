@@ -120,19 +120,23 @@ If you made it this far, congrats! You're almost done! Next is the remaining thr
 #### Part 6 - Create Functionality
 
 Implement CREATE functionality. You'll need to add an New **view** and update `server.js` and **model**.
-*Maybe reference the [post requests lecture](https://git.generalassemb.ly/wdi-nyc-ewok/LESSON_U02_D10_POST_REQUESTS)* 🧐
+*Maybe reference the [post requests lecture](https://git.generalassemb.ly/wdi-nyc-ewok/LESSON_U02_D10_POST_REQUESTS)* 🚀
 
-#### Part 7 - Edit Functionality
-
-Implement UPDATE functionality. You'll need to add an Edit **view** and update `server.js` and **model**.
-
-#### Part 8 - Delete Functionality
+#### Part 7 - Delete Functionality
 
 Implement DELETE functionality. Think about what files need to be updated to make this work.
 
-#### Part 9 BONUS - Style this bad boy so it looks nice!
+#### Part 8 - Edit Functionality
 
-#### Part 10 BONUS - Install `bcryptjs`, `cookie-parser`, `express-sessions`, `passport`, and `passport-local` and get auth-y in here! Spoiler alert: you'll need to add a couple more views to pull off this bonus
+Implement UPDATE functionality. Update `server.js` and **model**.
+
+#### Part 9 BONUS - Edit View
+
+Create the Edit **view** so it prepopulates the to do in the fields (use the `value` html attribute).
+
+#### Part 10 BONUS - Style this bad boy so it looks nice!
+
+#### Part 11 BONUS - Install `bcryptjs`, `cookie-parser`, `express-sessions`, `passport`, and `passport-local` and get auth-y in here! Spoiler alert: you'll need to add a couple more views to pull off this bonus
 
 
 
