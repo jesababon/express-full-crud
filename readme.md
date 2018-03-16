@@ -48,10 +48,10 @@ Directions are going to be a little more sparse as you should be able to start r
     - id
     - subject
     - content
-* Once your migration is ready, run it with the command `psql -d todo_app -f add-todo-table.sql` *make sure you are in the migrations folder*
+* Once your migration is ready, run it with the command `psql -d todo_app -f add-todo-table.sql` **make sure you are in the migrations folder**
 * Create a `seed.sql` file in the folder `seeds/`
-* In `seed.sql`, create some intial seed dada for your tasks table
-* Once your seed is ready, run it with the command `psql -d todo_app -f seed.sql` *make sure you are in the seeds folder*
+* In `seed.sql`, create some intial seed data for your tasks table
+* Once your seed is ready, run it with the command `psql -d todo_app -f seed.sql` **make sure you are in the seeds folder**
 * Make sure your database is set up properly before moving on
 
 #### Part 3 - Core App Functionality
@@ -59,20 +59,20 @@ Directions are going to be a little more sparse as you should be able to start r
 Hopefully at this point the setup process for Node/Express apps is becoming more familiar. Set up the following files/folders:
 
 * `sever.js`
-* **Models**
+* **models**
     -`Task.js`
 * **db**
     - **migrations**
         - `add-todo-table.sql`
     - **seeds**
         - `seed.sql`
-* **Views**
+* **views**
     - `index.ejs`
     - `show.ejs`
     - `new.ejs`
     - `edit.ejs`
 
-Before moving on, make sure that your To Do app starts without any errors and can display a simple index page `/`.
+Before moving on, make sure that your To Do app starts without any errors.
 
 #### Part 4 - Set Up Our Model
 
@@ -120,6 +120,7 @@ If you made it this far, congrats! You're almost done! Next is the remaining thr
 #### Part 6 - Create Functionality
 
 Implement CREATE functionality. You'll need to add an New **view** and update `server.js` and **model**.
+*🤔Maybe reference the middleware lab*
 
 #### Part 7 - Edit Functionality
 
