@@ -120,7 +120,7 @@ If you made it this far, congrats! You're almost done! Next is the remaining thr
 #### Part 6 - Create Functionality
 
 Implement CREATE functionality. You'll need to add an New **view** and update `server.js` and **model**.
-*🤔Maybe reference the middleware lab*
+* :thinking face: 🧐Maybe reference the middleware lab*
 
 #### Part 7 - Edit Functionality
 
