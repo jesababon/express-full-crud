@@ -18,7 +18,7 @@ Parts 1 - 8 are required for completion, and 9 and 10 are bonus.
 
 
 ## Submission
-Homework is due Saturday at 11pm
+Homework is due Sunday at 11pm
 
 ## Assignment
 Tonight we're going to make our first real, To Do List app! To Do Lists might not be the most exciting app to build, but it's a great way to practice implementing full CRUD functionality in a web application.
