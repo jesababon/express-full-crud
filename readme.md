@@ -35,7 +35,6 @@ Directions are going to be a little more sparse as you should be able to start r
     - pg-promise
     - body-parser
 * Add a `.gitignore` file and add the following files and folders to it:
-    - `.gitignore`
     - `node_modules/`
 * Prepare as much of the app structure as you can remember. Before you actually start coding, perform an initial `git commit`.
 
