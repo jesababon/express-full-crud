@@ -130,7 +130,7 @@ Implement UPDATE functionality. Update `server.js` and **model**. *No Need to cr
 
 - Style this bad boy so it looks nice!
 
-#### SUPER BONUS - Install `bcryptjs`, `cookie-parser`, `express-sessions`, `passport`, and `passport-local` and get auth-y in here! Spoiler alert: you'll need to add a couple more views to pull off this bonus
+#### SUPER BONUS
 
 [Learn about and add error handlers to your server](https://expressjs.com/en/guide/error-handling.html)
 They should be familiar with error handling and set them up in their apps 
@@ -138,3 +138,7 @@ They should be familiar with error handling and set them up in their apps
 [Learn about Express DEBUG mode](https://expressjs.com/en/guide/debugging.html), and browse the different namespaces of Express DEBUG logs with your app. While you're there, read about [the debug package](https://www.npmjs.com/package/debug).
 
 [Read about Security Best Practices with Express](https://expressjs.com/en/advanced/best-practice-security.html). There's a lot in here for them to learn about, including the `nsp` package and the `helmet` package introduces a bunch of innards of HTTP (caching, headers). Try some of them out in your app.
+
+#### OMG STOP ALREADY BONUS
+
+Install `bcryptjs`, `cookie-parser`, `express-sessions`, `passport`, and `passport-local` and get auth-y in here! Spoiler alert: you'll need to add a couple more views to pull off this bonus
