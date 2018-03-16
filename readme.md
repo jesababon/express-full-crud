@@ -28,7 +28,7 @@ Directions are going to be a little more sparse as you should be able to start r
 * Fork and Clone this repo
 * Create a server file for your app
 * Initialize your Node app
-* Set up the folder structure for your app - For example: `views`, `models`, `db`, `migrations`, etc
+* Set up the folder structure for your app - For example: `views`, `models`, etc.
 * `npm install --save` any modules you might need
     - express
     - ejs
@@ -41,16 +41,12 @@ Directions are going to be a little more sparse as you should be able to start r
 #### Part 2 - Set Up the Database
 
 * Enter `psql` and create a new database called `todo_app`
-* Create an `add-todo-table.sql` file in the folder `migrations/`
-* In `add-todo-table.sql`, create a table called `tasks`
+* Create a table called `tasks`
 * `tasks` should have columns for:
     - id
     - subject
     - content
-* Once your migration is ready, run it with the command `psql -d todo_app -f add-todo-table.sql` **make sure you are in the migrations folder**
-* Create a `seed.sql` file in the folder `seeds/`
-* In `seed.sql`, create some intial seed data for your tasks table
-* Once your seed is ready, run it with the command `psql -d todo_app -f seed.sql` **make sure you are in the seeds folder**
+* Create some intial data for your tasks table
 * Make sure your database is set up properly before moving on
 
 #### Part 3 - Core App Functionality
@@ -60,11 +56,6 @@ Hopefully at this point the setup process for Node/Express apps is becoming more
 * `sever.js`
 * **models**
     -`Task.js`
-* **db**
-    - **migrations**
-        - `add-todo-table.sql`
-    - **seeds**
-        - `seed.sql`
 * **views**
     - `index.ejs`
     - `show.ejs`
@@ -78,8 +69,8 @@ Before moving on, make sure that your To Do app starts without any errors.
 Now let's connect our Postgres database with our app using **pg-promise**.
 
 * In your `Task.js` model, using **pg-promise**, establish a connection to your postgres database called `todo_app`
-* Create an object where you can put all of your model functions.
-* Create a `Task` object with methods for `findAll`, `findById`, `create`, `edit`, and `delete`
+* Create a `Task` object where you can put all of your model functions.
+* Add methods for `findAll`, `findById`, `create`, `edit`, and `delete` to the object.
 * Remember to export this model
 
 Example with Books:
@@ -93,12 +84,13 @@ Book.findById = () => {// your code here}
 module.exports = Book
 ```
 
-#### Part 5 - Confrim Everything Works
+#### Part 5 - Confirm Everything Works
 
 Let's put the finishing touches on this To Do app and confirm everything works.
 
-* Make sure there is something in your `tasks` table so that we can test our To Do app
+* Make sure there is something in your `tasks` table so that we can test our To Do app.
 * Update your `server.js` to `require` the `Task` model and pass data to the view
+
 Example with Books:
 ``` js
 const Book = require('./models/Book')
@@ -140,6 +132,9 @@ Implement UPDATE functionality. Update `server.js` and **model**. *No Need to cr
 
 #### SUPER BONUS - Install `bcryptjs`, `cookie-parser`, `express-sessions`, `passport`, and `passport-local` and get auth-y in here! Spoiler alert: you'll need to add a couple more views to pull off this bonus
 
+[Learn about and add error handlers to your server](https://expressjs.com/en/guide/error-handling.html)
+They should be familiar with error handling and set them up in their apps 
 
+[Learn about Express DEBUG mode](https://expressjs.com/en/guide/debugging.html), and browse the different namespaces of Express DEBUG logs with your app. While you're there, read about [the debug package](https://www.npmjs.com/package/debug).
 
-
+[Read about Security Best Practices with Express](https://expressjs.com/en/advanced/best-practice-security.html). There's a lot in here for them to learn about, including the `nsp` package and the `helmet` package introduces a bunch of innards of HTTP (caching, headers). Try some of them out in your app.
