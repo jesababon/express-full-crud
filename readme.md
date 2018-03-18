@@ -140,4 +140,4 @@ Implement UPDATE functionality. Update `server.js` and **model**. *No Need to cr
 
 #### OMG STOP ALREADY BONUS
 
-Install `bcryptjs`, `cookie-parser`, `express-sessions`, `passport`, and `passport-local` and get auth-y in here! Spoiler alert: you'll need to add a couple more views to pull off this bonus
+Try implementing user authentication on one of your endpoints with [passport](http://www.passportjs.org/) and the [passport-local strategy](https://github.com/jaredhanson/passport-local).
