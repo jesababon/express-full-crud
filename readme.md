@@ -115,18 +115,17 @@ Implement CREATE functionality. You'll need to add an New **view** and update `s
 
 #### Part 7 - Delete Functionality
 
-Implement DELETE functionality. Think about what files need to be updated to make this work. *No Need to create a new view, use postgress to test it*
+Implement DELETE functionality. Think about what files need to be updated to make this work. *No Need to create a new view, use postgress to test it* Do not implement a delete button.
 
 #### Part 8 - Edit Functionality
 
-Implement UPDATE functionality. Update `server.js` and **model**. *No Need to create a new view, use postgress to test it*
+Implement UPDATE functionality. Update `server.js` and **model**. *No Need to create a new view, use postgress to test it* 
 
+Implement update functionality with a `POST` method endpoint. I know we said to use `PUT` but we'll discuss more in class next week.
 
 #### BONUS - MORE GOODIES
 
 - Add an edit button that will take the user to an Edit  **view** so it prepopulates the to do (task) in the input fields (use the `value` html attribute). *you will need a new route where the for will be displayed, maybe `/:id/edit`?* 🧐
-
-- Add a delete button to you task and redirect the user to their tasks
 
 - Style this bad boy so it looks nice!
 
