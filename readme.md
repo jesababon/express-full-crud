@@ -133,7 +133,6 @@ Implement UPDATE functionality. Update `server.js` and **model**. *No Need to cr
 #### SUPER BONUS
 
 [Learn about and add error handlers to your server](https://expressjs.com/en/guide/error-handling.html)
-They should be familiar with error handling and set them up in their apps 
 
 [Learn about Express DEBUG mode](https://expressjs.com/en/guide/debugging.html), and browse the different namespaces of Express DEBUG logs with your app. While you're there, read about [the debug package](https://www.npmjs.com/package/debug).
 
