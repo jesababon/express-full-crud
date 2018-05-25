@@ -54,14 +54,11 @@ Hopefully at this point the setup process for Node/Express apps is becoming more
 * `views/tasks/`
     - `index.ejs`
     - `show.ejs`
-    - `new.ejs`
-    - `edit.ejs`
 
 Make the following routes render HTML templates with *hardcoded fake data in the EJS templates*. Remember, as web developers we should break apart big problems into subproblems. Adding hardcoded sample data (like "buy salami") into the EJS files:
 
-`GET /tasks` should render the `views/tasks/index.ejs` view, which renders a list of all tasks.
+`GET /tasks` should render the `views/tasks/index.ejs` view, which renders a list of all tasks. It should include the form to create a new task.
 `GET /tasks/:id` should render the `views/tasks/show.ejs` view, which renders one task.
-`GET /tasks/new` should render the `views/tasks/new.ejs` view, which renders an HTML form to create a new task.
 `POST /tasks` should handle a form submission to create a new task, and redirect the user to the `GET /tasks` page.
 
 #### Part 4 - Set Up Our Model
