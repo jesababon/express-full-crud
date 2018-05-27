@@ -1,0 +1,21 @@
+{
+  "name": "HW-U02-D10-EXPRESS-FULL-CRUD",
+  "version": "1.0.0",
+  "description": "Let's make a full CRUD app!",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.generalassemb.ly:jesababon/HW-U02-D10-EXPRESS-FULL-CRUD.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "pg-monitor": "^1.0.0",
+    "pg-promise": "^8.4.4"
+  }
+}
