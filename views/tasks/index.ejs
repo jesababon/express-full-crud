@@ -1,12 +1,24 @@
 <% include ../partials/header.ejs %>
+<h2>TO DO LIST</h2>
+
+
     <% tasks.forEach(task => { %>
-        <h2><%= task.subject %></h2>
-            <p>
+        <div>
+            <h3>
+                <%= task.subject %>
+            </h3>
+        </div>
+
+        <div>
             <%= task.content %>
-            <p>
+
+        </div>
+
+        <div>
             <%= task.due_date %>
-            <br><br>
+        </div>
 
-            <% }); %>
-                <% include ../partials/footer.ejs %>
+        <br>
 
+        <% }); %>
+            <% include ../partials/footer.ejs %>

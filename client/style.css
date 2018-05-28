@@ -1,0 +1,30 @@
+body{
+    text-align: center;
+}
+
+header{
+    color:red;
+    position: relative;
+
+}
+
+.container{
+    align-content: center;
+    display: justify;
+}
+
+#create{
+    justify-content: space-between;
+    align-content: center;
+}
+
+#taskArchiveDiv{
+    height: auto;
+    width: auto;
+    position: relative;
+    background-image: url('/client/images/notepad.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* vertical-align: center; */
+    padding: 5%;
+}

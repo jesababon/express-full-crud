@@ -12,6 +12,9 @@ app.use(bodyParser.urlencoded({
   extended: false
 }));
 
+app.use("/client", express.static("client"));
+
+
 const PORT = process.env.PORT || 3000;
 
 app.get('/tasks', (request, response) => {
