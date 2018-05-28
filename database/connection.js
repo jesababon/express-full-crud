@@ -2,10 +2,11 @@ const pgp = require('pg-promise')();
 const connection = {
   host: 'localhost',
   port: 5432,
-  database: 'tasklist_db'  //should be tasklist_db
+  database: 'todo_app'
 };
+
 const db = pgp(connection);
 
-module.exports = db;
+console.log('connection on');
 
-console.log(db);
+module.exports = db;

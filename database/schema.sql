@@ -1,9 +1,13 @@
--- DROP DATABASE tasks;
+DROP DATABASE todo_app;
 DROP TABLE IF EXISTS tasks;
--- CREATE DATABASE tasks;
+
+CREATE DATABASE todo_app;
+
+\c todo_app
+
 CREATE TABLE tasks (
-    id SERIAL PRIMARY KEY,
-    to_do VARCHAR(255),
-    entry_date DATE,
+    task_id SERIAL PRIMARY KEY,
+    subject VARCHAR(255),
+    content VARCHAR(255),
     due_date DATE
     );

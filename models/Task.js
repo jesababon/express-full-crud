@@ -1,20 +1,18 @@
 const db = require('../database/connection');
 
 // console.log(db);
-
 const Task = {};
 
-Task.all = function () {
+
+Task.all = function(){
   return db.any('SELECT * FROM tasks');
 };
 
-Task.all()
-  .then(tasks => {
-    console.log(tasks);
-    return tasks;
+Task.all().then(tasks => {
+  return tasks;
+});
 
-  });
+console.log('task.js connected');
 
-console.log('blah');
 
-module.exports = Task;
+module.exports= Task;

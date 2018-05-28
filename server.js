@@ -14,6 +14,18 @@ app.use(bodyParser.urlencoded({
 
 const PORT = process.env.PORT || 3000;
 
+app.get('/tasks', (request, response) => {
+  Task.all()
+    .then(tasks => {
+      const templateData = {};
+      templateData.tasks = tasks;
+      response.render('tasks/index', templateData);
+    });
+});
+
+
+
+
 app.listen(PORT, () => {
   console.log(`Express server started on port ${PORT}`);
 });
