@@ -1,28 +1,15 @@
-<% include ../partials/header.ejs %>
+    <div class="container">
+        <div id='create'>
+            <form action="/tasks" method="POST">
+                <label>SUBJECT</label>
+                <input type="text" name="subject" id="createSubject" placeholder="Subject">
+                <label>CONTENT</label>
+                <input type="text" name="content" id="createContent" placeholder="Content">
 
-<h2>TO DO LIST</h2>
-
-
-<% tasks.forEach(task => { %>
-    <div>
-        <h3>
-            <%= task.subject %>
-        </h3>
+                <label>Due Date</label>
+                <input type="date" name="due_date" id="dueDate">
+                <button type="submit" id="createButton">Create Task</button>
+            </form>
+        </div>
+        <br>
     </div>
-
-    <div>
-        <%= task.content %>
-
-    </div>
-
-    <div>
-        <%= task.due_date %>
-    </div>
-
-    <br>
-
-    <% }); %>
-
-
-    <% include ../partials/footer.ejs %>
-

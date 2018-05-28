@@ -28,6 +28,14 @@ app.get('/tasks/:id', (request, response) => {
   });
 });
 
+//post a new task
+app.post('/tasks', (request, response) => {
+  const addTask = request.body;
+  Task.create(addTask).then(task => {
+    response.redirect(302, '/tasks');
+  });
+});
+
 
 app.listen(PORT, () => {
   console.log(`Express server started on port ${PORT}`);
