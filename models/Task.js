@@ -12,6 +12,10 @@ Task.all().then(tasks => {
   return tasks;
 });
 
+Task.find = (id) => {
+  return db.one(`SELECT * FROM tasks WHERE task_id = $1`, [id]);
+};
+
 console.log('task.js connected');
 
 

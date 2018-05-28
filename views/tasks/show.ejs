@@ -1,4 +1,23 @@
 <% include ../partials/header.ejs %>
+    <h2>TO DO LIST</h2>
 
 
-    <% include ../partials/header.ejs %>
+        <div>
+            <h3>
+                <%= task.subject %>
+            </h3>
+        </div>
+
+        <div>
+            <%= task.content %>
+
+        </div>
+
+        <div>
+            <%= task.due_date %>
+        </div>
+
+        <br>
+
+            <% include ../partials/footer.ejs %>
+
