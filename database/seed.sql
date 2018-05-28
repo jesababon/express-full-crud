@@ -3,5 +3,5 @@
 DELETE FROM tasks;
 
 INSERT INTO tasks (subject, content, due_date) 
-VALUES ('Vacuum', 'clean the apt','2018-05-30'),
-('Book vacation', 'think beaches','2018-08-01');
+VALUES ('Vacuum', 'clean the apt', TO_DATE('05-30-2018', 'MM DD YY')),
+('Book vacation', 'think beaches', TO_DATE('05-30-2018', 'MM DD YY'));

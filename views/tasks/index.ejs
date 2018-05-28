@@ -1,12 +1,11 @@
 <% include ../partials/header.ejs %>
     <% tasks.forEach(task => { %>
-        <h2>
-            <%= task.subject %>
-                <%= task.content %>
-        </h2>
-        <p>
-<%= task.due_date %>
-    </p>
+        <h2><%= task.subject %></h2>
+            <p>
+            <%= task.content %>
+            <p>
+            <%= task.due_date %>
+            <br><br>
 
             <% }); %>
                 <% include ../partials/footer.ejs %>
