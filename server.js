@@ -11,7 +11,6 @@ app.set('view engine', 'ejs');
 app.use('/client', express.static("client"));
 
 
-
 //show all tasks
 app.get('/tasks', (request, response) => {
   Task.all()
@@ -36,8 +35,15 @@ app.post('/tasks', (request, response) => {
   });
 });
 
+//delete a task
+app.delete('/tasks/:id', (request, response) => {
+  const removeTask = Number(request.params.id);
+  Task.delete(removeTask).then(task => {
+    reflect.deleteProperty(tasks, id); //figure it is result from the dinosaur lab
+});
+});
+
 
 app.listen(PORT, () => {
   console.log(`Express server started on port ${PORT}`);
 });
-

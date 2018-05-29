@@ -1,4 +1,4 @@
-const tasks = [
+const miscTasks = [
   {
     task_id: 1,
     subject: 'Buy groceries',
@@ -19,4 +19,4 @@ const tasks = [
   }
 ];
 
-module.exports = tasks;
+module.exports = miscTasks;

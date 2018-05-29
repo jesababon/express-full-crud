@@ -2,27 +2,22 @@
 <% include ../tasks/new.ejs %>
 
 
-<h2>TO DO LIST</h2>
+        <h2>TO DO LIST</h2>
 
 
-    <% tasks.forEach(task => { %>
-        <div>
-            <h3>
-                <%= task.subject %>
-            </h3>
-        </div>
+        <% tasks.forEach(task => { %>
+            <div class="task">
+                <b><%= task.subject %>:</b>
+                <%= task.content %>
+                <br>
+                <b>DUE:</b>
+                <%= task.due_date %>
 
-        <div>
-            <%= task.content %>
+            </div>
+            <br>
 
-        </div>
 
-        <div>
-            <%= task.due_date %>
-        </div>
 
-        <br>
+            <% }); %>
 
-        <% }); %>
-
-        <% include ../partials/footer.ejs %>
+                <% include ../partials/footer.ejs %>

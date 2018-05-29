@@ -1,23 +1,18 @@
 <% include ../partials/header.ejs %>
+<% include ../tasks/new.ejs %>
+
     <h2>TO DO LIST</h2>
 
 
-        <div>
-            <h3>
-                <%= task.subject %>
-            </h3>
-        </div>
-
-        <div>
-            <%= task.content %>
-
-        </div>
-
-        <div>
-            <%= task.due_date %>
-        </div>
-
+<div class="task">
+        <b><%= task.subject %>:</b>
+        <%= task.content %>
         <br>
+        <b>DUE:</b>
+        <%= task.due_date %>
 
-            <% include ../partials/footer.ejs %>
+    </div>
+    <br>
 
+
+<% include ../partials/footer.ejs %>
