@@ -24,30 +24,37 @@ header{
     margin: 0 10%;
     padding: 5px;
     display: flex;
-    /* text-align: justify; */
+     height: auto;
+     width: auto;
+     position: relative;
+     background-image: url('/client/images/notepad.jpg');
+     background-size: cover;
+     background-repeat: no-repeat;
+     padding: 5%;
+
 }
 
 .display{
-    display: inline;
+    display: block;
     padding: 0 10% 0 5%;
     text-align: justify;
 }
 
 #edit{
     flex-direction: column;
-    position: relative;
+    padding: 0 10% 0 5%;
+    border-left: dashed 5px lightcoral;
 }
 
-#taskArchiveDiv{
+/* #taskArchiveDiv{
     height: auto;
     width: auto;
     position: relative;
     background-image: url('/client/images/notepad.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    /* vertical-align: center; */
     padding: 5%;
-}
+} */
 
 button{
       display: inline-block;

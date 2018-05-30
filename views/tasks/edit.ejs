@@ -1,12 +1,12 @@
-<h5>Edit Task</h5>
+<h5>Update Task</h5>
     <div id='edit'>
         <form class="editForm" method="POST" action="/tasks/<%= task.task_id %>?_method=PUT">
-<input type="text" name="subject" id="createSubject" placeholder="Subject">
+<input type="text" name="subject" id="createSubject" placeholder="SUBJECT">
 <br>
-<input type="text" name="content" id="createContent" placeholder="Content">
+<input type="text" name="content" id="createContent" placeholder="CONTENT">
 <br>
 <input type="date" name="due_date" id="dueDate">
-<br>
+<br><br>
     <button type="submit">UPDATE</button>
 </form>
 
