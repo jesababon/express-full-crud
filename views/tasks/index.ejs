@@ -7,20 +7,20 @@
 
         <% tasks.forEach(task => { %>
             <div class="task">
-                <b><%= task.subject %>:</b>
+                <div class="display">
+                <h3><%= task.subject %>:</h3>
                 <%= task.content %>
                 <br>
-                <b>DUE:</b>
-                <%= task.due_date %>
-            
-            <br>
+                <h5>DUE:
+                <%= task.due_date %></h5>
+<form method="POST" action="/tasks/<%=task.task_id %>?_method=DELETE">
+    <button type="submit">DELETE</button>
+</form>
+</div>
 <form method="POST" action="/tasks/<%= task.task_id %>?_method=PUT">
 <% include ../tasks/edit.ejs %>
 </form>
 <br>
-<form method="POST" action="/tasks/<%=task.task_id %>?_method=DELETE">
-    <button type="submit">DELETE TASK</button>
-</form>
 
             </div>
 

@@ -23,7 +23,19 @@ header{
     border: 2px solid black;
     margin: 0 10%;
     padding: 5px;
+    display: flex;
+    /* text-align: justify; */
+}
 
+.display{
+    display: inline;
+    padding: 0 10% 0 5%;
+    text-align: justify;
+}
+
+#edit{
+    flex-direction: column;
+    position: relative;
 }
 
 #taskArchiveDiv{
@@ -35,4 +47,26 @@ header{
     background-repeat: no-repeat;
     /* vertical-align: center; */
     padding: 5%;
+}
+
+button{
+      display: inline-block;
+      padding: 0.3em 1.2em;
+      margin: 0 0.1em 0.1em 0;
+      border: 0.16em solid rgba(255, 255, 255, 0);
+      border-radius: 1em;
+      box-sizing: border-box;
+      text-decoration: none;
+      font-weight: 300;
+      color: white;
+      text-align: center;
+      transition: all 0.2s;
+      background-color: red;
+}
+
+button:hover{
+    color: red;
+    background-color: white;
+    border-color: red;
+
 }
