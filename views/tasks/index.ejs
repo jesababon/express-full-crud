@@ -15,7 +15,7 @@
             
             <br>
 <form method="POST" action="/tasks/<%= task.task_id %>?_method=PUT">
-    <button type="submit" id="updateButton">Update Task</button>
+<% include ../tasks/edit.ejs %>
 </form>
 <br>
 <form method="POST" action="/tasks/<%=task.task_id %>?_method=DELETE">

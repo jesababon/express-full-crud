@@ -10,7 +10,9 @@ app.use(methodOverride('_method'));
 app.use(bodyParser.urlencoded({
   extended: false
 }));
+
 app.set('view engine', 'ejs');
+
 app.use('/client', express.static("client"));
 
 
@@ -45,6 +47,8 @@ app.get('/tasks/:id/edit', (request, response) => {
   const id = Number(request.params.id);
   Task.find(id)
   .then(task => {
+    console.log(task);
+    
     response.render('tasks/edit', {task: task});
   });
 });

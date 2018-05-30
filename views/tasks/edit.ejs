@@ -3,12 +3,13 @@
 <div class="container">
     <div id='edit'>
         <form class="editForm" method="POST" action="/tasks/<%= task.task_id %>?_method=PUT">
-            <label>SUBJECT</label>
-            <input name="subject" value="<%=task.subject %>">
-            <label>CONTENT</label>
-            <input name="content" value="<%=task.content %>">
-            <label>DUE DATE</label>
-            <input name="due_date" value="<%=tasks.due_date %>">
+<label>SUBJECT</label>
+<input type="text" name="subject" id="createSubject" placeholder="Subject">
+<label>CONTENT</label>
+<input type="text" name="content" id="createContent" placeholder="Content">
+<label>DUE DATE</label>
+<input type="date" name="due_date" id="dueDate">
+
             <button type="submit">Update Task</button>
         </form>
     </div>

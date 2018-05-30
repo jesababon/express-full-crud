@@ -24,7 +24,8 @@ Task.create = (task) => {
 
 //update function
 Task.update = taskUpdate => {
-  return db.none('UPDATE tasks SET subject=${subject}, content=${content}, due_date=${due_date} WHERE task_id = ${task_id}', taskUpdate);
+  return db.none(`UPDATE tasks SET subject = $1, content = $2, due_date = $3 WHERE task_id = $4`, 
+  [taskUpdate.subject, taskUpdate.content, taskUpdate.due_date, taskUpdate.task_id]);
 };
 
 //delete function
