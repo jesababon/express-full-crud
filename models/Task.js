@@ -22,8 +22,14 @@ Task.create = (task) => {
   VALUES ($1, $2, $3) RETURNING *`, [task.subject, task.content, task.due_date]);
 };
 
-Task.delete = (task) => {
-  return db.result('DELETE * FROM tasks');
+//update function
+Task.update = taskUpdate => {
+  return db.none('UPDATE tasks SET subject=${subject}, content=${content}, due_date=${due_date} WHERE task_id = ${task_id}', taskUpdate);
+};
+
+//delete function
+Task.delete = id => {
+  return db.result('DELETE FROM tasks WHERE task_id= ${id}', {id: id});
 };
 
 

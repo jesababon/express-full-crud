@@ -1,0 +1,16 @@
+<h2>Edit Task</h2>
+<br>
+<div class="container">
+    <div id='edit'>
+        <form class="editForm" method="POST" action="/tasks/<%= task.task_id %>?_method=PUT">
+            <label>SUBJECT</label>
+            <input name="subject" value="<%=task.subject %>">
+            <label>CONTENT</label>
+            <input name="content" value="<%=task.content %>">
+            <label>DUE DATE</label>
+            <input name="due_date" value="<%=tasks.due_date %>">
+            <button type="submit">Update Task</button>
+        </form>
+    </div>
+    <br>
+</div>
